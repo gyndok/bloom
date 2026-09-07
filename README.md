@@ -42,3 +42,9 @@ The library includes a featured welcome packet, topic and language filters, full
 Excluded: `fragile X.pdf` contains an identifiable patient result; `Gaucher_Carrier_Result.pdf` is result-oriented and is held back from the general library; `RSV with Rx.pdf` and `nob paperwork.pdf` could not be verified through text extraction; the severe preeclampsia assessment is a clinical form; NOB/VBAC QR sheets and non-PDF source files are not part of the reading library. Do not publish or commit the source download archive. The shared source folder itself should be reviewed for patient data.
 
 21 automated tests cover all calculation methods, all indexed file paths and PDF signatures, catalog exclusions, filtering, link compatibility, reading-list round trips, unknown IDs, maximum payloads, and messaging encoding. Production build and TypeScript checks pass. Browser visual and real-device interaction testing has not been performed.
+
+## GitHub and automatic deployment
+
+Source: https://github.com/gyndok/bloom. The existing Vercel project is connected to this repository. Feature branches and pull requests receive Vercel previews; merging into `main` publishes the production site at https://pregnancy-calculator-self.vercel.app/.
+
+Use a `codex/` branch for changes, open a pull request, review the preview, and merge after the **Tests, types, and build** check passes. This check installs dependencies, runs the 21 tests, checks TypeScript, and builds the site. Keep private patient files and original source-folder archives outside the repository.
