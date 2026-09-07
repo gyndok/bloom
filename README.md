@@ -26,7 +26,7 @@ References: [ACOG dating guidance](https://www.acog.org/clinical/clinical-guidan
 - Use https://pregnancy-calculator-self.vercel.app/?visit=1 in the office. This mode starts blank and ignores browser-saved dates. It does not offer saving on the office computer.
 - Calculate with the visit information, review/edit **Due date to share**, and copy the patient link or open a Text/Email draft. The clinician addresses and sends the message in their own approved app. There is no sending service integrated into this site.
 - **Start next patient** clears the displayed information and local saved data.
-- Patient links contain a version and due date only, in a URL fragment. Fragments are not part of ordinary HTTP request URLs. Links are not encrypted, signed, revocable, or access-controlled; anyone with the link can see the due date. The patient or a recipient can alter it. Do not use these links as clinical records or proof of clinician approval. No claim of HIPAA compliance is made.
+- Patient links contain a version, due date, optional handout IDs, language, and optional assigned-date metadata in a URL fragment. Fragments are not part of ordinary HTTP request URLs. Links are not encrypted, signed, revocable, or access-controlled; anyone with the link can see the due date. The patient or a recipient can alter it. Do not use these links as clinical records or proof of clinician approval. No claim of HIPAA compliance is made.
 - Links take precedence over previously saved dates and always recalculate against the current local date. Progress also refreshes on focus, visibility change, and while the page remains open.
 - Patients may bookmark the full link, create a home-screen shortcut where supported, or opt into saving in browser storage. Home-screen behavior varies by browser; no offline support is provided.
 - If the assigned due date changes, send a new link. Previously sent links retain their original date.
@@ -47,4 +47,12 @@ Excluded: `fragile X.pdf` contains an identifiable patient result; `Gaucher_Carr
 
 Source: https://github.com/gyndok/bloom. The existing Vercel project is connected to this repository. Feature branches and pull requests receive Vercel previews; merging into `main` publishes the production site at https://pregnancy-calculator-self.vercel.app/.
 
-Use a `codex/` branch for changes, open a pull request, review the preview, and merge after the **Tests, types, and build** check passes. This check installs dependencies, runs the 21 tests, checks TypeScript, and builds the site. Keep private patient files and original source-folder archives outside the repository.
+Use a `codex/` branch for changes, open a pull request, review the preview, and merge after the **Tests, types, and build** check passes. This check installs dependencies, runs the automated tests, checks TypeScript, and builds the site. Keep private patient files and original source-folder archives outside the repository.
+
+## Patient experience
+
+The office handoff sheet creates QR codes locally and opens text/email drafts. The clinician explicitly confirms the assigned-date label; it is unsigned informational metadata, not authentication. New links retain version 1/2 compatibility. Revising a due date creates a new link; old links cannot update or be revoked.
+
+Patient links open a bilingual English/Spanish “This week” home, with current/upcoming care windows, selected or stage-relevant reading, a complete care schedule, warning signs, and vaccine guidance. Spanish mode defaults to the one existing Spanish PDF and offers clearly labeled English documents. PDFs are not translated. Calendar exports retain English event text and are labeled accordingly. Clinical Spanish copy is available in the preview for Dr. Klein’s review before production.
+
+Appointments are explicitly entered by the patient and saved only in localStorage under a key scoped to the due date. They do not book visits, sync, send notifications, or travel in shared links. A different browser or revised due date does not inherit an appointment. Home Screen instructions and an Apple touch icon are included; preserve the complete URL fragment when bookmarking. No fixed manifest start URL replaces the personal link.
