@@ -1,4 +1,5 @@
 'use client';
+import GoogleReview from '@/components/google-review';
 import {readingUrl,hasMobileGuide} from '@/lib/guide-links.mjs';
 import { useEffect, useState } from 'react';
 import { Flower2, Phone, CalendarDays, Smartphone } from 'lucide-react';
@@ -655,7 +656,7 @@ export default function PatientHome({
         <p className="status" role="status">
           {notice}
         </p>
-        <footer>
+        <GoogleReview spanish={es}/><footer>
           <p>
             {t(
               'Confirm dates and care decisions with your maternity team.',
