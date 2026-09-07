@@ -1,4 +1,5 @@
 'use client';
+import GoogleReview from '@/components/google-review';
 import { useState } from 'react';
 import { Flower2, Phone, Download, Printer, ArrowUp } from 'lucide-react';
 type Section = {
@@ -227,7 +228,7 @@ export default function GuideReader({
             {t('View the original pamphlet ↗', 'Ver el folleto original ↗')}
           </a>
         </aside>
-        <a className="guide-top" href="#guide-top">
+        <GoogleReview spanish={es}/><a className="guide-top" href="#guide-top">
           <ArrowUp size={16} /> {t('Back to top', 'Volver arriba')}
         </a>
       </main>
