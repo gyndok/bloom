@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {careSchedule,careWindow,careStatus,vaccineWindow,rsvSeasonWindow,escapeCalendar} from '../lib/care-plan.mjs';
+import {parseDate,iso,calculate,calendar} from '../lib/pregnancy.mjs';
+const start=parseDate('2026-01-01');
+test('all eight visit windows receive patient-specific dates',()=>{assert.equal(careSchedule.length,8);for(const item of careSchedule)assert.equal(careWindow(item,start).start,start+item.from*7);assert.equal(careWindow(careSchedule[7],start).end,null);assert.equal(iso(careWindow(careSchedule[0],start).start),'2026-02-26');});
+test('visit frequencies change at 36 and 40 weeks without overlap',()=>{for(const [i,end] of [[5,251],[6,279]]){const item=careSchedule[i];assert.equal(careStatus(item,{start,elapsed:end}),'In your window');assert.equal(careStatus(item,{start,elapsed:end+1}),'Earlier window');assert.equal(careStatus(careSchedule[i+1],{start,elapsed:end+1}),'In your window');}});
+test('screening window ends before 14 weeks and past windows never imply completion',()=>{assert.equal(careWindow(careSchedule[1],start).end,start+97);assert.equal(careStatus(careSchedule[0],{start,elapsed:0}),'Ahead');assert.equal(careStatus(careSchedule[0],{start,elapsed:200}),'Earlier window');});
+test('Tdap includes 27w0d through 36w6d',()=>assert.deepEqual(vaccineWindow(start,27,36),{start:start+189,end:start+258}));
+test('RSV window intersects September through January',()=>{const s=parseDate('2026-02-01');const r=rsvSeasonWindow(s);assert.equal(iso(r.start),'2026-09-13');assert.equal(iso(r.end),'2026-10-17');assert.equal(rsvSeasonWindow(parseDate('2025-09-01')),null);});
+test('RSV season crossing January ends on January 31',()=>{const s=parseDate('2026-06-01');const r=rsvSeasonWindow(s);assert.equal(iso(r.end),'2027-01-31');});
+test('calendar care entries are planning windows with escaped descriptions',()=>{const r=calculate({method:'due',date:'2026-10-08',asOf:'2026-02-01'}),ics=calendar(r);assert.equal((ics.match(/planning window/g)||[]).length,8);assert.equal((ics.match(/TRANSP:TRANSPARENT/g)||[]).length,8);assert.ok(ics.includes('not a booked appointment'));assert.equal(escapeCalendar('a,b;c\nd'),'a\\,b\\;c\\nd');});
