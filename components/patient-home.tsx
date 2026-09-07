@@ -1,5 +1,5 @@
 'use client';
-import {readingUrl,hasMobileGuide} from '@/lib/mobile-guides.mjs';
+import {readingUrl,hasMobileGuide} from '@/lib/guide-links.mjs';
 import { useEffect, useState } from 'react';
 import { Flower2, Phone, CalendarDays, Smartphone } from 'lucide-react';
 import {

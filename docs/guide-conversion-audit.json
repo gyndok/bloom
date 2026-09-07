@@ -1,0 +1,435 @@
+[
+  {
+    "id": "9e1e22ab",
+    "pages": 10,
+    "retainedLines": 592,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "15910924",
+    "pages": 1,
+    "retainedLines": 69,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "fae524e6",
+    "pages": 1,
+    "retainedLines": 132,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "38421fee",
+    "pages": 1,
+    "retainedLines": 62,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/morning_sickness.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "b1922693",
+    "pages": 1,
+    "retainedLines": 58,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/back_pain_pregnancy.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "d7446539",
+    "pages": 1,
+    "retainedLines": 58,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "170f53c3",
+    "pages": 1,
+    "retainedLines": 52,
+    "omittedPrintArtifacts": [
+      "3/13/26, 11:15 AM",
+      "file:///Users/geffreyklein/clawd/output/pamphlets/ob_batch/constipation_pregnancy.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "e8cf2ca6",
+    "pages": 1,
+    "retainedLines": 52,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "538ae096",
+    "pages": 1,
+    "retainedLines": 67,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/exercise_pregnancy.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "e7987a1b",
+    "pages": 1,
+    "retainedLines": 62,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "00043d46",
+    "pages": 1,
+    "retainedLines": 55,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "23c24736",
+    "pages": 1,
+    "retainedLines": 89,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "8a44a7f4",
+    "pages": 1,
+    "retainedLines": 48,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "b4e504e8",
+    "pages": 1,
+    "retainedLines": 67,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/travel_pregnancy.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "72719dd3",
+    "pages": 1,
+    "retainedLines": 81,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "69aae7ca",
+    "pages": 1,
+    "retainedLines": 52,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "c95edd32",
+    "pages": 1,
+    "retainedLines": 55,
+    "omittedPrintArtifacts": [
+      "3/13/26, 11:15 AM",
+      "file:///Users/geffreyklein/clawd/output/pamphlets/ob_batch/cf_screening.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "ed2a4ab5",
+    "pages": 1,
+    "retainedLines": 51,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "aac934f4",
+    "pages": 1,
+    "retainedLines": 56,
+    "omittedPrintArtifacts": [
+      "3/13/26, 11:15 AM",
+      "file:///Users/geffreyklein/clawd/output/pamphlets/ob_batch/fetal_surveillance.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "ac8f2a3c",
+    "pages": 1,
+    "retainedLines": 61,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/group_b_strep.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "84482bc9",
+    "pages": 1,
+    "retainedLines": 69,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/rh_negative.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "9d134be6",
+    "pages": 1,
+    "retainedLines": 64,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "6a0ba963",
+    "pages": 1,
+    "retainedLines": 37,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "2b69329a",
+    "pages": 1,
+    "retainedLines": 63,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/cholestasis.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "8afcfece",
+    "pages": 1,
+    "retainedLines": 65,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/gestational_diabetes.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "9afe3b3a",
+    "pages": 1,
+    "retainedLines": 72,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/hypertension_pregnancy.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "c7861b3a",
+    "pages": 1,
+    "retainedLines": 97,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "4256737e",
+    "pages": 1,
+    "retainedLines": 69,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "383b9bef",
+    "pages": 1,
+    "retainedLines": 71,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/pupps.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "710777ef",
+    "pages": 1,
+    "retainedLines": 66,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "c03d67dc",
+    "pages": 1,
+    "retainedLines": 52,
+    "omittedPrintArtifacts": [
+      "3/13/26, 11:15 AM",
+      "file:///Users/geffreyklein/clawd/output/pamphlets/ob_batch/analgesia_labor.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "377d70f8",
+    "pages": 2,
+    "retainedLines": 100,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "d5e9105c",
+    "pages": 1,
+    "retainedLines": 57,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/breech_presentation.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "f1ab5cab",
+    "pages": 1,
+    "retainedLines": 64,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/cesarean_birth.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "035a1d94",
+    "pages": 2,
+    "retainedLines": 102,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "742e9fb7",
+    "pages": 1,
+    "retainedLines": 53,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "5e574348",
+    "pages": 1,
+    "retainedLines": 68,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "2a69b54c",
+    "pages": 2,
+    "retainedLines": 67,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "adb847fc",
+    "pages": 2,
+    "retainedLines": 71,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "19f84a81",
+    "pages": 2,
+    "retainedLines": 79,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "5a5495e0",
+    "pages": 1,
+    "retainedLines": 81,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "e6063d08",
+    "pages": 1,
+    "retainedLines": 39,
+    "omittedPrintArtifacts": [
+      "3/13/26, 11:15 AM",
+      "file:///Users/geffreyklein/clawd/output/pamphlets/ob_batch/signs_of_labor.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "f69ba89b",
+    "pages": 2,
+    "retainedLines": 95,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "1a9913fd",
+    "pages": 2,
+    "retainedLines": 83,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "74aa2847",
+    "pages": 1,
+    "retainedLines": 59,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/circumcision.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "cce080bb",
+    "pages": 1,
+    "retainedLines": 67,
+    "omittedPrintArtifacts": [
+      "3/19/26, 11:38 AM",
+      "file:///Users/geffreyklein/clawd/pamphlet-rebuild-obstetrics/postpartum_depression.html",
+      "1/1"
+    ],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "9487bf3e",
+    "pages": 2,
+    "retainedLines": 82,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "d37238d1",
+    "pages": 1,
+    "retainedLines": 61,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "9666ecf9",
+    "pages": 1,
+    "retainedLines": 69,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "dc72c6a8",
+    "pages": 1,
+    "retainedLines": 63,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  },
+  {
+    "id": "4388017d",
+    "pages": 2,
+    "retainedLines": 77,
+    "omittedPrintArtifacts": [],
+    "sourceTextCoverage": "100% of retained line tokens"
+  }
+]

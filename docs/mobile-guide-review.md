@@ -1,4 +1,4 @@
-# Mobile guide pilot review
+# Complete mobile library review
 
 Converted three practice pamphlets to reflowable pages. Original PDFs remain unchanged and available on every reader page. Text was compared with all four rendered source pages, including the vaccine pamphlet’s second-page continuation. Tables are represented as labeled stacked sections; decorative icons and repeated running headers are omitted. Original clinical statements are retained; typographic casing and “wks” labels are normalized. The content records source hashes so a replacement PDF cannot silently leave an old transcription in place.
 
@@ -12,4 +12,4 @@ Converted three practice pamphlets to reflowable pages. Original PDFs remain unc
 
 Only the vaccine PDF supplies a clinical review date (June 2026). The other two readers explicitly say no source review date is listed. September 7, 2026 is the mobile formatting date, not clinician approval. Do not substitute it for a clinical review date.
 
-The welcome packet and remaining PDFs are unchanged. These three readers are the initial design/content pilot for practice review.
+All 54 pamphlets now have reading pages. The three original structured conversions remain; the additional 51 retain their extracted source text and original-page images, with prior approved movement and CDC RSV corrections carried into relevant guides. All source PDFs remain unchanged. The original ACOG birth-plan attribution and printable form are preserved. Source-page layouts were inventoried across all 73 pages; automatic source-token coverage checks are recorded in guide-conversion-audit.json. This does not constitute a new clinical review of every source.

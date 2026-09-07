@@ -1,5 +1,5 @@
 'use client';
-import {readingUrl,hasMobileGuide} from '@/lib/mobile-guides.mjs';
+import {readingUrl,hasMobileGuide} from '@/lib/guide-links.mjs';
 import {useState} from 'react';
 import {BookOpen,ArrowUpRight,Search,Plus,Check,X,Files,HeartHandshake,ArrowUp,Phone} from 'lucide-react';
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from '@/components/ui/select';
