@@ -231,7 +231,7 @@
             ]
           },
           {
-            "title": "Decreased baby movement (after 24 weeks)",
+            "title": "Decreased baby movement (after 28 weeks)",
             "body": "Movement should not decrease toward the end of pregnancy.",
             "items": [
               "Noticeable decrease in baby’s usual movement pattern",
@@ -281,7 +281,8 @@
         "body": "Office Phone: 281-557-0300 | After Hours: Follow the answering service instructions to reach the on-call physician.\n\nQuestions? Contact our office. This handout is for educational purposes only and does not replace personalized medical advice from your provider."
       }
     ],
-    "sourceSha256": "fa881aabfe4b074c594b30a9643fd4f23a3a66d47585ad2265fdcea77893b6b1"
+    "sourceSha256": "fa881aabfe4b074c594b30a9643fd4f23a3a66d47585ad2265fdcea77893b6b1",
+    "clinicalUpdates": "Dr. Klein updated the decreased-movement threshold to 28 weeks on September 7, 2026. The original PDF retains its earlier wording."
   },
   "14a92cf3": {
     "converted": "2026-09-07",

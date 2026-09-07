@@ -24,7 +24,7 @@ test('urgent source details and after-hours instructions survive conversion', ()
     'Thoughts of harming yourself or others',
     'soaking 1 pad/hour or large clots',
     'Fewer than 10 movements in 2 hours',
-    'after 24 weeks',
+    'after 28 weeks',
     'Temperature ≥ 100.4°F',
     'Follow the answering service instructions',
   ])

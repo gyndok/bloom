@@ -4,7 +4,7 @@ Converted three practice pamphlets to reflowable pages. Original PDFs remain unc
 
 ## Clinical reconciliation before production
 
-- The dedicated warning-signs pamphlet uses **after 24 weeks** for decreased movement; the FAQ and existing timeline use **after 28 weeks**. Both originals are preserved in this preview.
+- The dedicated warning-signs pamphlet uses **after 24 weeks** for decreased movement; the FAQ and existing timeline use **after 28 weeks**. Dr. Klein directed the mobile guide to use 28 weeks on September 7, 2026. That update is applied and disclosed in the reader; the original PDF remains unchanged.
 - The vaccine pamphlet heading says **three vaccines, every pregnancy**. Bloom’s existing RSV guidance distinguishes previous maternal RSV vaccination. The source heading is preserved and needs clinician reconciliation.
 - The FAQ schedule puts Tdap in the 24–28-week row but its vaccine section says 27–36 weeks. Both source statements are preserved.
 - The FAQ lists yellow fever among vaccines to avoid; Bloom’s existing vaccine guidance includes a travel-risk exception.

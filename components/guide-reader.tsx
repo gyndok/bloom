@@ -86,7 +86,8 @@ export default function GuideReader({
           Mobile formatting: September 7, 2026; this is not a new clinical
           review.
         </p>
-        <nav className="guide-contents" aria-label="On this page">
+        {guide.clinicalUpdates && <p className="guide-source-note">{guide.clinicalUpdates}</p>}
+      <nav className="guide-contents" aria-label="On this page">
           <h2>On this page</h2>
           {guide.sections.map((s: Section, i: number) => (
             <a key={s.title} href={'#section-' + i}>
