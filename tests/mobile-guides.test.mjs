@@ -45,3 +45,5 @@ test('source review dates are not fabricated and multi-page vaccine ending is in
   ])
     assert.ok(text.includes(passage), passage);
 });
+
+test('RSV mobile guidance includes prior-pregnancy eligibility and season',()=>{for(const id of ['14a92cf3','28bc72c9']){const text=JSON.stringify(guides[id]);assert.ok(text.includes('CDC does not recommend another dose'));assert.ok(text.includes('September'));assert.ok(text.includes('36 weeks 6 days'));assert.ok(guides[id].guidanceUrl.startsWith('https://www.cdc.gov/'));}assert.ok(!JSON.stringify(guides['14a92cf3']).includes('three vaccines, every pregnancy'));});

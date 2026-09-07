@@ -137,7 +137,7 @@
               "Tdap: 27–36 weeks (every pregnancy)",
               "Flu vaccine: Every flu season (any trimester)",
               "COVID-19: Recommended; discuss with Dr. Klein",
-              "RSV vaccine: 32–36 weeks (Abrysvo) — protects newborn"
+              "RSV (Abrysvo): one dose at 32 weeks 0 days–36 weeks 6 days, September–January. If you received a maternal RSV vaccine in a previous pregnancy, CDC does not recommend another dose; ask about infant RSV immunization instead."
             ]
           },
           {
@@ -155,7 +155,9 @@
         "body": "No question is too small. Call our office at (281) 557-0300 during office hours. For after-hours emergencies, leave a message and our on-call provider will return your call. We're honored to be part of your pregnancy journey."
       }
     ],
-    "sourceSha256": "8c369e385c3770ac1a9c1679ceff56090dd64b61558101fe4bdec0f9c7f3b250"
+    "sourceSha256": "8c369e385c3770ac1a9c1679ceff56090dd64b61558101fe4bdec0f9c7f3b250",
+    "clinicalUpdates": "RSV guidance updated to match CDC guidance on September 7, 2026. The original PDF retains its earlier wording.",
+    "guidanceUrl": "https://www.cdc.gov/rsv/hcp/vaccine-clinical-guidance/pregnant-people.html"
   },
   "7d319ac9": {
     "converted": "2026-09-07",
@@ -292,7 +294,7 @@
     "author": "Geffrey H. Klein, MD · FACOG · DABOM",
     "title": "Vaccines & pregnancy",
     "subtitle": "Protecting you and your baby — before, during, and after pregnancy",
-    "intro": "When you get vaccinated, you aren't just protecting yourself — your body makes antibodies that cross the placenta and give your baby early protection during the first months of life, before they are old enough for their own vaccines. Some vaccines are best given before pregnancy, three are recommended during every pregnancy, and a few are given after delivery to catch up.",
+    "intro": "When you get vaccinated, you aren't just protecting yourself — your body makes antibodies that cross the placenta and give your baby early protection during the first months of life, before they are old enough for their own vaccines. Some vaccines are best given before pregnancy, others are given during pregnancy according to vaccine history and seasonal eligibility, and a few are given after delivery to catch up.",
     "reviewDate": "June 2026",
     "copyright": "© 2026 Women's Specialists of Clear Lake · Patient Education Material",
     "sections": [
@@ -313,7 +315,7 @@
         ]
       },
       {
-        "title": "During pregnancy — three vaccines, every pregnancy",
+        "title": "During pregnancy — vaccine timing and eligibility",
         "subsections": [
           {
             "title": "Tdap · 27–36 weeks · Every pregnancy",
@@ -334,12 +336,13 @@
             ]
           },
           {
-            "title": "RSV (Abrysvo) · 32–36 weeks · Sept–Jan",
+            "title": "RSV (Abrysvo) · 32 weeks 0 days–36 weeks 6 days · September–January",
             "body": "RSV is the leading cause of infant hospitalization in the U.S. The Pfizer vaccine (Abrysvo) is the only RSV vaccine approved in pregnancy. Antibodies pass to your baby and protect against severe RSV for their first 6 months. If you don't get the RSV vaccine, your baby can instead receive an antibody shot (nirsevimab) after birth.",
             "items": [
-              "Given at 32–36 weeks",
-              "Only during Sept–Jan (RSV season)",
-              "Protects baby for first 6 months"
+              "One dose at 32 weeks 0 days through 36 weeks 6 days",
+              "September through January in this area",
+              "If you received a maternal RSV vaccine in any previous pregnancy, CDC does not recommend another dose in a subsequent pregnancy. Ask your care team about infant RSV immunization instead.",
+              "Helps protect your baby during the first months of life"
             ]
           }
         ]
@@ -401,6 +404,8 @@
         "body": "Talk to us at your next visit. We're happy to review your vaccination history and make sure you and your baby are fully protected — before, during, and after pregnancy. No question is too small. You can also find reliable information at cdc.gov/vaccines."
       }
     ],
-    "sourceSha256": "9c0435e2ba4e34ad25817646945bdd7ba72e135a2c12b46334b06eb7bf982d8e"
+    "sourceSha256": "9c0435e2ba4e34ad25817646945bdd7ba72e135a2c12b46334b06eb7bf982d8e",
+    "clinicalUpdates": "RSV timing and prior-pregnancy dose guidance updated to match CDC guidance on September 7, 2026. The original PDF retains its earlier wording.",
+    "guidanceUrl": "https://www.cdc.gov/rsv/hcp/vaccine-clinical-guidance/pregnant-people.html"
   }
 }

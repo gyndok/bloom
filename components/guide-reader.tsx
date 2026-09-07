@@ -86,7 +86,7 @@ export default function GuideReader({
           Mobile formatting: September 7, 2026; this is not a new clinical
           review.
         </p>
-        {guide.clinicalUpdates && <p className="guide-source-note">{guide.clinicalUpdates}</p>}
+        {guide.clinicalUpdates && <p className="guide-source-note">{guide.clinicalUpdates}{guide.guidanceUrl && <> <a href={guide.guidanceUrl} target="_blank" rel="noreferrer">CDC RSV guidance ↗</a></>}</p>}
       <nav className="guide-contents" aria-label="On this page">
           <h2>On this page</h2>
           {guide.sections.map((s: Section, i: number) => (
