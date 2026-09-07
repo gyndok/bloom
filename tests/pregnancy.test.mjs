@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {calculate,parseDate,iso,calendar} from '../lib/pregnancy.mjs';
+const base={method:'period',date:'2024-01-01',asOf:'2024-04-08',cycle:'28',embryo:'5',weeks:'12',days:'0'};
+test('standard LMP across leap day and trimester boundary',()=>{const r=calculate(base);assert.equal(iso(r.due),'2024-10-07');assert.equal(r.weeks,14);assert.equal(r.days,0);assert.equal(r.trimester,2)});
+test('cycle adjustment',()=>assert.equal(iso(calculate({...base,cycle:'32'}).due),'2024-10-11'));
+test('conception and IVF methods agree',()=>{const due=calculate(base).due;assert.equal(calculate({...base,method:'conception',date:'2024-01-15'}).due,due);for(const embryo of ['3','5','6'])assert.equal(calculate({...base,method:'ivf',embryo,date:iso(parseDate('2024-01-15')+Number(embryo))}).due,due)});
+test('ultrasound and known due date agree',()=>{const due=calculate(base).due;assert.equal(calculate({...base,method:'ultrasound',date:'2024-04-01',weeks:'13',days:'0'}).due,due);assert.equal(calculate({...base,method:'due',date:'2024-10-07'}).due,due)});
+test('reject invalid calendar dates and numeric ranges',()=>{for(const date of ['','2024-02-30','2023-02-29','bad'])assert.throws(()=>calculate({...base,date}));for(const cycle of ['20','46','28.5',''])assert.throws(()=>calculate({...base,cycle}));assert.throws(()=>calculate({...base,method:'ultrasound',days:'7'}));assert.throws(()=>calculate({...base,method:'unknown'}));});
+test('third trimester, due date, future and postterm',()=>{assert.equal(calculate({...base,asOf:'2024-07-15'}).trimester,3);assert.equal(calculate({...base,asOf:'2024-10-07'}).remaining,0);assert.equal(calculate({...base,asOf:'2023-12-31'}).progress,0);assert.equal(calculate({...base,asOf:'2024-10-21'}).weeks,42);assert.equal(calculate({...base,asOf:'2024-10-21'}).progress,100)});
+test('calendar exports nine valid all-day events',()=>{const text=calendar(calculate(base));assert.equal((text.match(/BEGIN:VEVENT/g)||[]).length,9);assert.match(text,/DTSTART;VALUE=DATE:20241007\r\nDTEND;VALUE=DATE:20241008/);assert.ok(text.endsWith('END:VCALENDAR\r\n'))});

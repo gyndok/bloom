@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createPatientLink,readPatientLink,patientForm,composeLinks,shareMessage} from '../lib/patient-link.mjs';
+import {calculate} from '../lib/pregnancy.mjs';
+const origin='https://pregnancy-calculator-self.vercel.app/?visit=1';
+test('patient links carry only version and due date in fragment',()=>{const link=createPatientLink(origin,'2027-05-03');const url=new URL(link);assert.equal(url.search,'');assert.equal(url.hash,'#v=1&due=2027-05-03');assert.equal(readPatientLink(url.hash),'2027-05-03');assert.equal(url.pathname,'/');});
+test('no server request path contains patient date',()=>{const url=new URL(createPatientLink(origin,'2027-05-03'));assert.equal(url.pathname+url.search,'/');});
+test('invalid or ambiguous patient links fail intentionally',()=>{for(const hash of ['#due=2027-05-03','#v=3&due=2027-05-03','#v=1&due=2027-02-30','#v=1&due=bad','#v=1&due=2027-05-03&due=2028-01-01','#v=1&due=2300-01-01'])assert.throws(()=>readPatientLink(hash));assert.equal(readPatientLink('#journey'),null);assert.equal(readPatientLink(''),null);assert.throws(()=>createPatientLink('javascript:alert(1)','2027-05-03'));});
+test('shared timeline uses due date and progresses across days',()=>{const day1=calculate(patientForm('2027-05-03','2026-10-01'));const day2=calculate(patientForm('2027-05-03','2026-10-02'));assert.equal(day1.due,day2.due);assert.equal(day2.elapsed-day1.elapsed,1);assert.equal(day1.remaining-day2.remaining,1);});
+test('sharing carries no dating method or as-of date',()=>{const f=patientForm('2027-05-03','2026-10-01');const link=createPatientLink(origin,f.date);assert.equal(link.includes('2026-10-01'),false);assert.equal(link.includes('method'),false);});
+test('email and SMS preserve complete link when decoded',()=>{const link=createPatientLink(origin,'2027-05-03');const compose=composeLinks(link);for(const value of Object.values(compose)){assert.ok(decodeURIComponent(value).includes(link));assert.ok(value.includes('%23v%3D1%26due%3D2027-05-03'));}assert.equal(new URLSearchParams(compose.email.split('?')[1]).get('body'),shareMessage(link));});
