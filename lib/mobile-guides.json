@@ -1,0 +1,405 @@
+{
+  "28bc72c9": {
+    "converted": "2026-09-07",
+    "language": "English",
+    "practice": "Women's Specialists of Clear Lake",
+    "address": "400 W Medical Center Blvd, Suite 300, Webster, TX 77598",
+    "author": "Geffrey H. Klein, MD · FACOG · DABOM",
+    "title": "Pregnancy questions, answered",
+    "subtitle": "Answers to common questions from your OB/GYN team at Women's Specialists of Clear Lake",
+    "reviewDate": null,
+    "sections": [
+      {
+        "title": "Prenatal care",
+        "subsections": [
+          {
+            "title": "When should I schedule my first visit?",
+            "body": "Schedule as soon as pregnancy is confirmed — ideally between 8–10 weeks. We'll confirm the pregnancy, estimated due date, and start your care plan."
+          },
+          {
+            "title": "How often will I be seen?",
+            "body": "Monthly until 28 weeks · every 2 weeks 28–36 weeks · weekly 36–40 weeks · twice weekly after 40 weeks."
+          },
+          {
+            "title": "What prenatal vitamins should I take?",
+            "body": "Begin a prenatal vitamin with at least 400–800 mcg of folic acid as soon as possible. Start before conception if planning a pregnancy."
+          }
+        ]
+      },
+      {
+        "title": "Diet & nutrition",
+        "subsections": [
+          {
+            "title": "How much extra should I eat?",
+            "body": "Extra calorie needs: 0 extra in 1st trimester · ~340/day 2nd · ~450/day 3rd trimester. Focus on nutrient quality, not just quantity."
+          },
+          {
+            "title": "Eat plenty of",
+            "items": [
+              "Fruits, vegetables, whole grains",
+              "Lean protein, legumes, dairy",
+              "Low-mercury fish (salmon, tilapia, shrimp)"
+            ]
+          },
+          {
+            "title": "Avoid",
+            "items": [
+              "Raw/undercooked meat, fish, eggs",
+              "High-mercury fish (shark, swordfish)",
+              "Unpasteurized products, deli meats",
+              "Alcohol — no safe amount"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Medications & safety",
+        "subsections": [
+          {
+            "title": "What medications are safe?",
+            "body": "Generally safe: Tylenol (acetaminophen), Tums, Zofran (with approval), prenatal vitamins. Avoid NSAIDs (ibuprofen, Advil) especially after 20 weeks."
+          },
+          {
+            "title": "Can I exercise?",
+            "body": "Yes! 30 minutes of moderate exercise most days is recommended unless complications arise. Walking, swimming, and prenatal yoga are excellent choices."
+          },
+          {
+            "title": "Can I travel?",
+            "body": "Generally safe until 36 weeks. Avoid long trips after 28 weeks without medical clearance. Stay hydrated and move frequently on long trips."
+          }
+        ]
+      },
+      {
+        "title": "Prenatal visit schedule",
+        "subsections": [
+          {
+            "title": "8–10 weeks",
+            "body": "Confirm pregnancy, EDD, baseline labs, genetic counseling"
+          },
+          {
+            "title": "11–14 weeks",
+            "body": "First trimester screen, NT ultrasound, NIPT if desired"
+          },
+          {
+            "title": "16–18 weeks",
+            "body": "Quad screen, hear heartbeat, discuss anatomy scan"
+          },
+          {
+            "title": "18–22 weeks",
+            "body": "Anatomy ultrasound — detailed fetal survey"
+          },
+          {
+            "title": "24–28 weeks",
+            "body": "Gestational diabetes screen (1-hr glucose), Tdap"
+          },
+          {
+            "title": "28–36 weeks",
+            "body": "Every 2 weeks; RhoGAM if Rh-negative"
+          },
+          {
+            "title": "36–40 weeks",
+            "body": "Weekly; GBS swab; birth plan discussion"
+          },
+          {
+            "title": "40+ weeks",
+            "body": "Twice weekly; NST; discuss induction options"
+          }
+        ]
+      },
+      {
+        "title": "Warning signs",
+        "subsections": [
+          {
+            "title": "Call us immediately / Go to L&D",
+            "items": [
+              "Vaginal bleeding (any amount)",
+              "Severe abdominal pain or cramping",
+              "Signs of preeclampsia: severe headache, vision changes, swelling in face/hands",
+              "Decreased fetal movement after 28 weeks",
+              "Water breaking / gush of fluid",
+              "Fever over 100.4°F",
+              "Regular contractions before 37 weeks"
+            ]
+          },
+          {
+            "title": "After-hours emergency",
+            "body": "Call our office or go directly to Clear Lake Regional Medical Center L&D"
+          }
+        ],
+        "tone": "urgent"
+      },
+      {
+        "title": "Vaccines in pregnancy",
+        "subsections": [
+          {
+            "title": "Recommended & safe",
+            "items": [
+              "Tdap: 27–36 weeks (every pregnancy)",
+              "Flu vaccine: Every flu season (any trimester)",
+              "COVID-19: Recommended; discuss with Dr. Klein",
+              "RSV vaccine: 32–36 weeks (Abrysvo) — protects newborn"
+            ]
+          },
+          {
+            "title": "Avoid live vaccines in pregnancy",
+            "body": "MMR, Varicella, Live flu mist, Yellow fever"
+          },
+          {
+            "title": "Protecting you and your newborn",
+            "body": "Vaccines are the safest way to protect you and your newborn from serious illness."
+          }
+        ]
+      },
+      {
+        "title": "Questions? We're here for you 24/7",
+        "body": "No question is too small. Call our office at (281) 557-0300 during office hours. For after-hours emergencies, leave a message and our on-call provider will return your call. We're honored to be part of your pregnancy journey."
+      }
+    ],
+    "sourceSha256": "8c369e385c3770ac1a9c1679ceff56090dd64b61558101fe4bdec0f9c7f3b250"
+  },
+  "7d319ac9": {
+    "converted": "2026-09-07",
+    "language": "English",
+    "practice": "Women's Specialists of Clear Lake",
+    "address": "400 W Medical Center Blvd, Suite 300, Webster, TX 77598",
+    "author": "Geffrey H. Klein, MD | OBGYN & Obesity Medicine | Houston, Texas",
+    "title": "When to call your doctor",
+    "subtitle": "A patient guide",
+    "intro": "Congratulations on your pregnancy. Most symptoms in pregnancy are normal and related to hormonal and physical changes. However, some symptoms can be warning signs of a serious condition. Please contact our office or seek urgent care immediately if you experience any of the following:",
+    "reviewDate": null,
+    "sections": [
+      {
+        "title": "Call 911 or go to the ER immediately",
+        "items": [
+          "Chest pain",
+          "Shortness of breath at rest or difficulty breathing",
+          "Fainting or loss of consciousness",
+          "Seizure",
+          "Thoughts of harming yourself or others",
+          "Heavy vaginal bleeding (soaking 1 pad/hour or large clots)"
+        ],
+        "tone": "emergency"
+      },
+      {
+        "title": "Call our office immediately",
+        "subsections": [
+          {
+            "title": "Bleeding or fluid concerns",
+            "items": [
+              "Any vaginal bleeding",
+              "Gush or steady leakage of fluid from the vagina",
+              "Passing tissue",
+              "Foul-smelling vaginal discharge"
+            ]
+          },
+          {
+            "title": "Pain",
+            "items": [
+              "Severe abdominal or pelvic pain",
+              "Severe cramping not relieved by rest",
+              "Persistent right upper abdominal pain (under ribs)",
+              "Severe back pain with pelvic pressure",
+              "Painful urination"
+            ]
+          },
+          {
+            "title": "Headache or vision changes",
+            "items": [
+              "Severe headache not improved with rest or Tylenol",
+              "Blurred vision, flashing lights, or temporary vision loss",
+              "Sudden swelling of face, hands, or around eyes"
+            ]
+          },
+          {
+            "title": "Blood pressure / Preeclampsia symptoms",
+            "items": [
+              "Severe or persistent headache",
+              "Nausea/vomiting after mid-pregnancy",
+              "Sudden swelling",
+              "Decreased urine output",
+              "Feeling generally unwell in second half of pregnancy"
+            ]
+          },
+          {
+            "title": "Fever or infection",
+            "items": [
+              "Temperature ≥ 100.4°F",
+              "Chills",
+              "Severe body aches",
+              "Persistent cough with shortness of breath",
+              "Red, painful leg swelling (especially one-sided)"
+            ]
+          },
+          {
+            "title": "Decreased baby movement (after 24 weeks)",
+            "body": "Movement should not decrease toward the end of pregnancy.",
+            "items": [
+              "Noticeable decrease in baby’s usual movement pattern",
+              "Fewer than 10 movements in 2 hours during active time"
+            ]
+          },
+          {
+            "title": "Preterm labor signs (before 37 weeks)",
+            "items": [
+              "Regular contractions (more than 4–6 per hour)",
+              "Pelvic pressure",
+              "Low dull backache",
+              "Menstrual-like cramps",
+              "Vaginal spotting or discharge changes"
+            ]
+          }
+        ],
+        "tone": "urgent"
+      },
+      {
+        "title": "Mental health matters",
+        "items": [
+          "Persistent sadness or hopelessness",
+          "Severe anxiety or panic attacks",
+          "Trouble sleeping unrelated to pregnancy discomfort",
+          "Feeling overwhelmed or unable to cope"
+        ]
+      },
+      {
+        "title": "Common symptoms that are usually normal",
+        "body": "Still call if severe or concerning to you.",
+        "items": [
+          "Mild nausea or vomiting",
+          "Mild swelling of feet",
+          "Occasional headaches",
+          "Round ligament pain",
+          "Mild shortness of breath with activity",
+          "Braxton Hicks contractions (irregular, not painful, resolve with rest)"
+        ]
+      },
+      {
+        "title": "Trust your instincts",
+        "body": "If something feels wrong, call. You know your body best. If you are unsure whether a symptom is serious, it is always appropriate to contact our office for guidance."
+      },
+      {
+        "title": "Contact & after hours",
+        "body": "Office Phone: 281-557-0300 | After Hours: Follow the answering service instructions to reach the on-call physician.\n\nQuestions? Contact our office. This handout is for educational purposes only and does not replace personalized medical advice from your provider."
+      }
+    ],
+    "sourceSha256": "fa881aabfe4b074c594b30a9643fd4f23a3a66d47585ad2265fdcea77893b6b1"
+  },
+  "14a92cf3": {
+    "converted": "2026-09-07",
+    "language": "English",
+    "practice": "Women's Specialists of Clear Lake",
+    "address": "400 W Medical Center Blvd, Suite 300, Webster, TX 77598",
+    "author": "Geffrey H. Klein, MD · FACOG · DABOM",
+    "title": "Vaccines & pregnancy",
+    "subtitle": "Protecting you and your baby — before, during, and after pregnancy",
+    "intro": "When you get vaccinated, you aren't just protecting yourself — your body makes antibodies that cross the placenta and give your baby early protection during the first months of life, before they are old enough for their own vaccines. Some vaccines are best given before pregnancy, three are recommended during every pregnancy, and a few are given after delivery to catch up.",
+    "reviewDate": "June 2026",
+    "copyright": "© 2026 Women's Specialists of Clear Lake · Patient Education Material",
+    "sections": [
+      {
+        "title": "Before pregnancy (preconception)",
+        "subsections": [
+          {
+            "title": "The best time to get fully protected is before you conceive",
+            "items": [
+              "We check your immunity to measles, rubella & chickenpox (varicella)",
+              "MMR and varicella are live vaccines — get them, then wait 4 weeks before trying to conceive",
+              "Flu shot any time you may become pregnant",
+              "Catch up on HPV vaccine through age 26",
+              "Hepatitis A & B and pneumococcal if you have risk factors",
+              "A preconception visit is the ideal time to review your vaccine history"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "During pregnancy — three vaccines, every pregnancy",
+        "subsections": [
+          {
+            "title": "Tdap · 27–36 weeks · Every pregnancy",
+            "body": "Protects against tetanus, diphtheria, and pertussis (whooping cough). Whooping cough is especially dangerous for newborns — it can cause them to stop breathing and turn blue. Getting Tdap in the third trimester lets your antibodies cross the placenta and protect your baby from birth until their own vaccine at 2 months.",
+            "items": [
+              "Recommended in EVERY pregnancy",
+              "Given at 27–36 weeks",
+              "Protects baby before their 2-month shots"
+            ]
+          },
+          {
+            "title": "Flu (Influenza) · Any trimester · Flu season",
+            "body": "Pregnancy changes your immune, heart, and lung function, making you much more likely to become seriously ill from the flu. The flu also raises the risk of premature labor. The shot passes antibodies to your baby, protecting them before their own vaccine at 6 months.",
+            "items": [
+              "Safe in any trimester",
+              "Get it by end of October if possible",
+              "Flu shot only — not the nasal spray"
+            ]
+          },
+          {
+            "title": "RSV (Abrysvo) · 32–36 weeks · Sept–Jan",
+            "body": "RSV is the leading cause of infant hospitalization in the U.S. The Pfizer vaccine (Abrysvo) is the only RSV vaccine approved in pregnancy. Antibodies pass to your baby and protect against severe RSV for their first 6 months. If you don't get the RSV vaccine, your baby can instead receive an antibody shot (nirsevimab) after birth.",
+            "items": [
+              "Given at 32–36 weeks",
+              "Only during Sept–Jan (RSV season)",
+              "Protects baby for first 6 months"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Vaccine timing at a glance",
+        "subsections": [
+          {
+            "title": "1st trimester",
+            "body": "Flu shot if season is active"
+          },
+          {
+            "title": "2nd trimester",
+            "body": "Flu shot if season is active"
+          },
+          {
+            "title": "3rd trimester · 27–36 weeks",
+            "body": "Tdap every pregnancy"
+          },
+          {
+            "title": "3rd trimester · 32–36 weeks",
+            "body": "RSV (Abrysvo) Sept–Jan only"
+          },
+          {
+            "title": "Flu season (any trimester)",
+            "body": "Flu shot by end of October"
+          }
+        ]
+      },
+      {
+        "title": "After delivery (postpartum)",
+        "subsections": [
+          {
+            "title": "Catch up on anything you couldn't get during pregnancy",
+            "items": [
+              "If you were non-immune to measles, rubella, or chickenpox, get those vaccines now",
+              "These live vaccines are safe while breastfeeding",
+              "Start or finish the HPV series if you're age 26 or younger",
+              "Catch up on any Hepatitis A/B or pneumococcal doses you still need"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Vaccines to avoid during pregnancy",
+        "items": [
+          "Live vaccines are not given while pregnant: MMR, varicella (chickenpox), and the nasal-spray flu (FluMist) — get these before or after pregnancy",
+          "It's perfectly fine for your family members to receive these live vaccines",
+          "If a live vaccine is given before a pregnancy is known, don't worry — no fetal harm has ever been reported"
+        ],
+        "tone": "urgent"
+      },
+      {
+        "title": "Are these vaccines safe?",
+        "body": "Yes. The flu shot, Tdap, and RSV vaccine are studied extensively in pregnancy and recommended by ACOG, the CDC, and the AAP. The vaccines given during pregnancy are not live and cannot give you the disease. Side effects are mild and temporary — arm soreness, low-grade fever, or fatigue for 1–2 days — signs your immune system is responding. Vaccines do not cause autism or infertility."
+      },
+      {
+        "title": "Questions about vaccines?",
+        "body": "Talk to us at your next visit. We're happy to review your vaccination history and make sure you and your baby are fully protected — before, during, and after pregnancy. No question is too small. You can also find reliable information at cdc.gov/vaccines."
+      }
+    ],
+    "sourceSha256": "9c0435e2ba4e34ad25817646945bdd7ba72e135a2c12b46334b06eb7bf982d8e"
+  }
+}

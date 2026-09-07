@@ -1,4 +1,5 @@
 'use client';
+import {readingUrl,hasMobileGuide} from '@/lib/mobile-guides.mjs';
 import { useEffect, useState } from 'react';
 import { Flower2, Phone, CalendarDays, Smartphone } from 'lucide-react';
 import {
@@ -176,7 +177,7 @@ export default function PatientHome({
     <a
       className="patient-guide"
       key={h.id}
-      href={h.url}
+      href={readingUrl(h)}
       target="_blank"
       rel="noreferrer"
     >
@@ -187,7 +188,7 @@ export default function PatientHome({
       </span>
       <h3>{h.title}</h3>
       <p>
-        {h.language} · PDF · {h.pages} {t('pages', 'páginas')}
+        {h.language} · {hasMobileGuide(h.id)?t('Mobile guide','Guía móvil'):'PDF'} · {h.pages} {t('pages', 'páginas')}
       </p>
       <b>{t('Read guide', 'Leer guía')} ↗</b>
     </a>
