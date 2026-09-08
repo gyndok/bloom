@@ -37,6 +37,7 @@ export default function PatientHome({
   clear: () => void;
 }) {
   const [language, setLanguage] = useState('en'),
+    [theme, setTheme] = useState('green'),
     [assigned, setAssigned] = useState(false),
     [issued, setIssued] = useState(''),
     [appointment, setAppointment] = useState(''),
@@ -77,6 +78,17 @@ export default function PatientHome({
       document.documentElement.lang = 'en';
     };
   }, [language]);
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('bloom-color-v1');
+      if (saved === 'blue' || saved === 'pink') setTheme(saved);
+    } catch {}
+  }, []);
+  function changeTheme(value: string) {
+    setTheme(value);
+    try { localStorage.setItem('bloom-color-v1', value); }
+    catch { setNotice(t('Color changed for this visit. This browser could not save it.', 'El color cambió para esta visita. Este navegador no pudo guardarlo.')); }
+  }
   function changeLanguage(value: string) {
     setLanguage(value);
     const u = new URL(link || window.location.href),
@@ -205,7 +217,7 @@ export default function PatientHome({
     </a>
   );
   return (
-    <div className="patient-home" onClick={anchor}>
+    <div className="patient-home" data-theme={theme} onClick={anchor}>
       <header>
         <a className="brand" href="#this-week">
           <Flower2 /> bloom<span>Dr. Geffrey Klein</span>
@@ -221,6 +233,21 @@ export default function PatientHome({
       </header>
       <main>
         <PatientWelcome spanish={es}/>
+        <fieldset className="patient-colors">
+          <legend>{t('Make Bloom yours', 'Personalice Bloom')}</legend>
+          <p>{t('Keep green for a surprise, or choose a color anytime.', 'Conserve el verde para la sorpresa o elija un color cuando quiera.')}</p>
+          <div className="color-options">
+            {[
+              ['green', t('Surprise / unknown', 'Sorpresa / aún no sé'), t('Green', 'Verde')],
+              ['blue', t('Boy', 'Niño'), t('Blue', 'Azul')],
+              ['pink', t('Girl', 'Niña'), t('Pink', 'Rosa')],
+            ].map(([value, label, color]) => <label key={value}>
+              <input type="radio" name="bloom-color" value={value} checked={theme === value} onChange={() => changeTheme(value)}/>
+              <span className={`color-swatch swatch-${value}`} aria-hidden="true"/>
+              <span>{label}<small>{color}</small></span>
+            </label>)}
+          </div>
+        </fieldset>
         <nav className="patient-tabs">
           <a href="#this-week">{t('This week', 'Esta semana')}</a>
           <a href="#patient-plan">{t('Timeline', 'Calendario')}</a>
