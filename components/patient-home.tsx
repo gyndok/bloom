@@ -1,4 +1,5 @@
 'use client';
+import PatientWelcome from '@/components/patient-welcome';
 import GoogleReview from '@/components/google-review';
 import {readingUrl,hasMobileGuide} from '@/lib/guide-links.mjs';
 import { useEffect, useState } from 'react';
@@ -210,13 +211,14 @@ export default function PatientHome({
         </select>
       </header>
       <main>
+        <PatientWelcome spanish={es}/>
         <nav className="patient-tabs">
           <a href="#this-week">{t('This week', 'Esta semana')}</a>
           <a href="#patient-plan">{t('Timeline', 'Calendario')}</a>
           <a href="#patient-guides">{t('Guides', 'Guías')}</a>
           <a href="#patient-alerts">{t('When to call', 'Cuándo llamar')}</a>
         </nav>
-        <section className="patient-week panel" id="this-week">
+        <section className="patient-week panel" id="this-week" tabIndex={-1}>
           <div className="eyebrow">
             {t('YOUR PREGNANCY, TODAY', 'SU EMBARAZO, HOY')}
           </div>
