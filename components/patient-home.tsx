@@ -1,6 +1,7 @@
 'use client';
 import {appointmentCalendar} from '@/lib/appointment-calendar.mjs';
 import PatientWelcome from '@/components/patient-welcome';
+import CareContacts from '@/components/care-contacts';
 import GoogleReview from '@/components/google-review';
 import {readingUrl,hasMobileGuide} from '@/lib/guide-links.mjs';
 import { useEffect, useState } from 'react';
@@ -224,6 +225,7 @@ export default function PatientHome({
           <a href="#this-week">{t('This week', 'Esta semana')}</a>
           <a href="#patient-plan">{t('Timeline', 'Calendario')}</a>
           <a href="#patient-guides">{t('Guides', 'Guías')}</a>
+          <a href="#care-contacts">{t('Hospital & contacts', 'Hospital y contactos')}</a>
           <a href="#patient-alerts">{t('When to call', 'Cuándo llamar')}</a>
         </nav>
         <section className="patient-week panel" id="this-week" tabIndex={-1}>
@@ -613,6 +615,7 @@ export default function PatientHome({
             </p>
           )}
         </section>
+        <CareContacts spanish={es}/>
         <section id="patient-alerts" className="warning-panel">
           <h2>{t('When to call right away', 'Cuándo llamar de inmediato')}</h2>
           <p>
