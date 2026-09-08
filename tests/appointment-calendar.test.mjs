@@ -1,0 +1,5 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {appointmentCalendar} from '../lib/appointment-calendar.mjs';
+test('appointment export uses local input converted to UTC with explicit placeholder duration',()=>{const date='2027-01-25T09:30',ics=appointmentCalendar(date,false,new Date('2026-09-08T12:00:00Z'));const stamp=d=>d.toISOString().replace(/[-:]/g,'').replace('.000','');assert.ok(ics.includes('DTSTART:'+stamp(new Date(date))));assert.ok(ics.includes('DTEND:'+stamp(new Date(new Date(date).getTime()+1800000))));assert.ok(ics.includes('SUMMARY:Appointment with Dr. Klein'));assert.equal((ics.match(/BEGIN:VEVENT/g)||[]).length,1);assert.ok(ics.includes('30-minute placeholder'));assert.ok(!ics.includes('due='));assert.ok(ics.endsWith('\r\n'));});
+test('Spanish export and invalid input are handled',()=>{assert.ok(appointmentCalendar('2027-01-25T09:30',true).includes('SUMMARY:Cita con el Dr. Klein'));for(const value of ['',null,'2027-02-30T09:30'])assert.throws(()=>appointmentCalendar(value));});

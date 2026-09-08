@@ -1,4 +1,5 @@
 'use client';
+import {appointmentCalendar} from '@/lib/appointment-calendar.mjs';
 import PatientWelcome from '@/components/patient-welcome';
 import GoogleReview from '@/components/google-review';
 import {readingUrl,hasMobileGuide} from '@/lib/guide-links.mjs';
@@ -150,6 +151,13 @@ export default function PatientHome({
         ),
       );
     }
+  }
+  function addAppointmentToCalendar(){
+    try {
+      const url=URL.createObjectURL(new Blob([appointmentCalendar(appointment,es)],{type:'text/calendar;charset=utf-8'}));
+      const a=document.createElement('a');a.href=url;a.download='bloom-appointment.ics';document.body.appendChild(a);a.click();a.remove();window.setTimeout(()=>URL.revokeObjectURL(url),60000);
+      setNotice(t('Open the calendar file to review and save your appointment.','Abra el archivo de calendario para revisar y guardar su cita.'));
+    } catch {setNotice(t('Please enter a valid appointment date and time.','Ingrese una fecha y hora válidas para la cita.'));}
   }
   function removeAppointment() {
     try {
@@ -337,7 +345,7 @@ export default function PatientHome({
                 }).format(new Date(appointment))}
               </h3>
               <div className="phone-actions">
-                <button onClick={() => setEditing(true)}>
+                <button onClick={addAppointmentToCalendar}><CalendarDays size={17}/>{t('Add to calendar','Agregar al calendario')}</button><button onClick={() => setEditing(true)}>
                   {t('Edit', 'Editar')}
                 </button>
                 <button onClick={removeAppointment}>
@@ -352,7 +360,7 @@ export default function PatientHome({
               'Se guarda solo en este navegador para esta fecha de parto. No se incluye en su enlace, no se sincroniza entre dispositivos y no envía recordatorios.',
             )}
           </p>
-        </section>
+        <p className="helper">{t('Calendar entries use the local time entered above and reserve 30 minutes; adjust the end time when saving. Later changes in Bloom do not update your calendar—edit the existing calendar event to avoid duplicates.','Los eventos usan la hora local indicada y reservan 30 minutos; ajuste la hora de finalización al guardar. Los cambios posteriores en Bloom no actualizan su calendario; edite el evento existente para evitar duplicados.')}</p></section>
         <section className="patient-reading">
           <h2>
             {t('A little reading for right now', 'Lecturas para este momento')}
