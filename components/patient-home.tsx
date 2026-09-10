@@ -44,7 +44,7 @@ export default function PatientHome({
     [editing, setEditing] = useState(true),
     [notice, setNotice] = useState(''),
     [query, setQuery] = useState(''),
-    [guideLimit, setGuideLimit] = useState(6),
+    [guideLimit, setGuideLimit] = useState(3),
     [allLanguages, setAllLanguages] = useState(false),
     [link, setLink] = useState('');
   const es = language === 'es',
@@ -597,8 +597,8 @@ export default function PatientHome({
           </a>
         </section>
         <section id="patient-guides">
-          <details className="guide-disclosure">
-          <summary><span><strong>{t('Your patient guides', 'Sus guías para pacientes')}</strong><small>{t('Tap to browse or search the library', 'Toque para explorar o buscar en la biblioteca')}</small></span><span className="guide-chevron" aria-hidden="true">⌄</span></summary>
+          <details className="guide-disclosure" open>
+          <summary><span><strong>{t('Your patient guides', 'Sus guías para pacientes')}</strong><small>{handouts.length} {t('guides in your pregnancy library · tap to collapse', 'guías en su biblioteca del embarazo · toque para cerrar')}</small></span><span className="guide-chevron" aria-hidden="true">⌄</span></summary>
           <div className="guide-disclosure-body">
           <p>
             {t(
@@ -616,25 +616,28 @@ export default function PatientHome({
                 <input
                   type="checkbox"
                   checked={allLanguages}
-                  onChange={(e) => {setAllLanguages(e.target.checked);setGuideLimit(6);}}
+                  onChange={(e) => {setAllLanguages(e.target.checked);setGuideLimit(3);}}
                 />{' '}
                 Mostrar también guías en inglés
               </label>
             </>
           )}
+          <div className="patient-library-search">
           <label htmlFor="patient-search">
-            {t('Search guides', 'Buscar guías')}
+            {t('Search the entire library', 'Buscar en toda la biblioteca')}
           </label>
           <input
             id="patient-search"
             type="search"
             value={query}
-            onChange={(e) => {setQuery(e.target.value);setGuideLimit(6);}}
+            onChange={(e) => {setQuery(e.target.value);setGuideLimit(3);}}
             placeholder={t(
-              'Search by title or topic',
-              'Buscar por título o tema',
+              'Try nausea, travel, breastfeeding…',
+              'Busque náuseas, viajes, lactancia…',
             )}
           />
+          <p className="library-result-count" role="status">{t('Showing', 'Mostrando')} {Math.min(guideLimit, docs.length)} {t('of', 'de')} {docs.length} {query ? t('matching guides', 'guías que coinciden') : t('guides', 'guías')}</p>
+          </div>
           <div className="patient-two">{docs.slice(0, guideLimit).map(guideCard)}</div>
           {docs.length > guideLimit && <button className="more-guides" onClick={() => setGuideLimit(n => n + 6)}>{t('Show more guides', 'Mostrar más guías')} · {docs.length - guideLimit} {t('remaining', 'restantes')}</button>}
           {docs.length === 0 && (
