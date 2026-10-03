@@ -4,6 +4,7 @@ import PatientWelcome from '@/components/patient-welcome';
 import CareContacts from '@/components/care-contacts';
 import GoogleReview from '@/components/google-review';
 import {readingUrl,hasMobileGuide} from '@/lib/guide-links.mjs';
+import {trackCalendarExport,trackHandoutOpen} from '@/components/site-analytics';
 import { useEffect, useState } from 'react';
 import { Flower2, Phone, CalendarDays, Smartphone } from 'lucide-react';
 import {
@@ -169,7 +170,7 @@ export default function PatientHome({
   function addAppointmentToCalendar(){
     try {
       const url=URL.createObjectURL(new Blob([appointmentCalendar(appointment,es)],{type:'text/calendar;charset=utf-8'}));
-      const a=document.createElement('a');a.href=url;a.download='bloom-appointment.ics';document.body.appendChild(a);a.click();a.remove();window.setTimeout(()=>URL.revokeObjectURL(url),60000);
+      const a=document.createElement('a');a.href=url;a.download='bloom-appointment.ics';document.body.appendChild(a);a.click();a.remove();window.setTimeout(()=>URL.revokeObjectURL(url),60000);trackCalendarExport('appointment');
       setNotice(t('Open the calendar file to review and save your appointment.','Abra el archivo de calendario para revisar y guardar su cita.'));
     } catch {setNotice(t('Please enter a valid appointment date and time.','Ingrese una fecha y hora válidas para la cita.'));}
   }
@@ -204,6 +205,7 @@ export default function PatientHome({
       href={readingUrl(h)}
       target="_blank"
       rel="noreferrer"
+      onClick={() => trackHandoutOpen(h)}
     >
       <span>
         {selected.includes(h.id)
