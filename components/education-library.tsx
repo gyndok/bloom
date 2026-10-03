@@ -1,6 +1,7 @@
 'use client';
 import {readingUrl,hasMobileGuide} from '@/lib/guide-links.mjs';
 import {useState} from 'react';
+import {trackHandoutOpen} from '@/components/site-analytics';
 import {BookOpen,ArrowUpRight,Search,Plus,Check,X,Files,HeartHandshake,ArrowUp,Phone} from 'lucide-react';
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from '@/components/ui/select';
 import {handouts,categories,welcome,filterHandouts} from '@/lib/handouts.mjs';
@@ -11,7 +12,8 @@ export default function EducationLibrary({patient,visit,selected,onChange,hasRes
  const selecting=!patient&&(visit||hasResult);
  function toggle(id:string){onChange(selected.includes(id)?selected.filter(x=>x!==id):[...selected,id]);}
  function reset(){setQuery('');setCategory('All');setLanguage('All');setLimit(9);}
- const pdf=(doc:typeof handouts[number],label='Read guide')=><a className="pdf-link" href={readingUrl(doc)} target="_blank" rel="noreferrer" aria-label={`${label}: ${doc.title}`}>{hasMobileGuide(doc.id)?label:label==='Read guide'?'Open PDF':label}<ArrowUpRight size={17}/></a>;
+ const whenToCall=handouts.find(d=>d.sourceFile==='When to call the doctor.pdf')!;
+ const pdf=(doc:typeof handouts[number],label='Read guide')=><a className="pdf-link" href={readingUrl(doc)} target="_blank" rel="noreferrer" onClick={()=>trackHandoutOpen(doc)} aria-label={`${label}: ${doc.title}`}>{hasMobileGuide(doc.id)?label:label==='Read guide'?'Open PDF':label}<ArrowUpRight size={17}/></a>;
  return <section id="patient-education" className="reading-room" aria-labelledby="reading-title">
  <div className="reading-heading"><div><div className="eyebrow"><BookOpen size={16}/> FROM DR. KLEIN’S LIBRARY</div><h2 id="reading-title">A little knowledge.<br/>A lot of reassurance.</h2><p>{selecting?'Build a reading list for this visit. Your selections travel with the patient’s link.':'Your questions deserve thoughtful answers. Find your care team’s handouts, all in one place.'}</p></div><div className="library-seal"><BookOpen size={27}/><b>{handouts.length}</b><span>patient guides</span></div></div>
  <details className="guide-disclosure" open={selecting ? true : undefined}><summary><span><strong>Browse patient education</strong><small>Tap to find a guide, topic, or answer</small></span><span className="guide-chevron" aria-hidden="true">⌄</span></summary><div className="guide-disclosure-body">
@@ -23,7 +25,7 @@ export default function EducationLibrary({patient,visit,selected,onChange,hasRes
  {docs.length===0&&<div className="library-empty"><Search size={28}/><h4>No guides match that search.</h4><p>Try a shorter search or choose another topic.</p><button onClick={reset}>Show all guides</button></div>}
  {docs.length>limit&&<button className="more-guides" onClick={()=>setLimit(n=>n+12)}>Show more guides <span>{docs.length-limit} more</span></button>}
  <div className="library-footnote"><BookOpen size={18}/><p>Handouts from Dr. Klein’s practice. Available mobile guides open as reading pages with the original PDF included. Other handouts open as PDFs in a new tab; use your phone’s Share menu to save a copy. A topic in this library does not mean you have that condition. Your care team can help you decide what applies to you.</p></div>
- <div className="care-contact"><div><b>Questions are part of the journey.</b><p>Your care team is here for the conversation.</p></div><a href="tel:+12815570300"><Phone size={17}/> (281) 557-0300</a><a href={handouts.find(d=>d.sourceFile==='When to call the doctor.pdf')!.url} target="_blank" rel="noreferrer">When to call <ArrowUpRight size={17}/></a></div>
+ <div className="care-contact"><div><b>Questions are part of the journey.</b><p>Your care team is here for the conversation.</p></div><a href="tel:+12815570300"><Phone size={17}/> (281) 557-0300</a><a href={whenToCall.url} target="_blank" rel="noreferrer" onClick={()=>trackHandoutOpen(whenToCall,'pdf')}>When to call <ArrowUpRight size={17}/></a></div>
  </div></details>
  {selecting&&selected.length>0&&<div className="selection-dock"><span><Check size={17}/><b>{selected.length}</b> {selected.length===1?'guide':'guides'} selected</span><a href={hasResult?'#share-heading':'#calculator'}>{hasResult?'Review patient link':'Enter due date'}<ArrowUpRight size={17}/></a></div>}
  </section>;
