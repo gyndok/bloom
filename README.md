@@ -12,7 +12,7 @@ Requires Node 22.13 or newer. Install with `npm ci`; run `npm run dev`. Check wi
 
 ## Privacy and limitations
 
-No analytics or third-party fonts. Dates are computed locally and optionally stored in browser localStorage. Exported calendars contain personal dates. These estimates are educational, not a diagnosis or a substitute for a clinician-assigned due date. Ultrasound milestone windows are illustrative; appointments vary by country and care plan. Dates after 42 weeks are flagged, not capped.
+Vercel Web Analytics counts anonymous page views (cookieless). Before sending, the URL is reduced to its path, so due dates and reading lists in patient links are never reported. No third-party fonts. Dates are computed locally and optionally stored in browser localStorage. Exported calendars contain personal dates. These estimates are educational, not a diagnosis or a substitute for a clinician-assigned due date. Ultrasound milestone windows are illustrative; appointments vary by country and care plan. Dates after 42 weeks are flagged, not capped.
 
 ## Validation
 
